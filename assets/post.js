@@ -1,6 +1,5 @@
-// client/assets/post.js
 async function loadSinglePost() {
-    // 1. Get the ID from the URL (?id=2)
+   
     const urlParams = new URLSearchParams(window.location.search);
     const postId = urlParams.get('id');
 
@@ -10,16 +9,16 @@ async function loadSinglePost() {
     }
 
     try {
-        // 2. Fetch data from backend
+       
         const response = await fetch(`http://localhost:3000/posts/${postId}`);
         if (response.status !== 200) throw new Error("Post not found");
         
         const post = await response.json();
         
-        // 3. Display the data in the container
+       
         const container = document.getElementById("single-post-container");
         
-        // Create CSS-friendly category name
+   
         const catClass = post.category.toLowerCase().replace(" ", "-");
 
         container.innerHTML = `
@@ -41,5 +40,6 @@ async function loadSinglePost() {
         document.getElementById("single-post-container").innerHTML = "<p>Error loading report.</p>";
     }
 }
+
 
 loadSinglePost();
