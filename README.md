@@ -20,8 +20,7 @@ The front-end of our application enables the user to interact with the database 
 
 ## Database Schema
 
-``
-`SQL
+``` SQL
 -- If there is already a table, get rid of it
 DROP TABLE IF EXISTS posts;
 
