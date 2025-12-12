@@ -1,4 +1,4 @@
-/* client/assets/default.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Base Post Card */
+
 .post {
     background: white;
     padding: 20px;
@@ -22,7 +22,7 @@ body {
     border-top: 6px solid #ccc;
 }
 
-/* Category Colors */
+
 .match-report { border-top-color: #1a73e8; }
 .transfer-news { border-top-color: #f29900; }
 .club-injuries { border-top-color: #d93025; }
@@ -51,7 +51,7 @@ body {
     text-decoration: underline;
 }
 
-/* Form Styling */
+
 .form-section {
     background: #fff;
     padding: 20px;
@@ -59,7 +59,7 @@ body {
     border-radius: 8px;
 }
 
-/* client/assets/default.css */
+
 
 .full-post-view {
     max-width: 700px;
@@ -87,7 +87,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #333;
-    white-space: pre-wrap; /* Keeps paragraphs spaced correctly */
+    white-space: pre-wrap; 
 }
 
 .post-footer {
@@ -96,4 +96,5 @@ body {
     border-top: 1px solid #eee;
     font-size: 0.9rem;
     color: #888;
+
 }
