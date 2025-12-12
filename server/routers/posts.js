@@ -1,6 +1,8 @@
+require("dotenv").config();
+
 const { Router } = require("express");
 
-const postsController = require("../controllers/countries");
+const postsController = require("../controllers/posts");
 
 const postsRouter = Router();
 
