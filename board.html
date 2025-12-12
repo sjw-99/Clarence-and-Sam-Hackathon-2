@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/default.css">
+    <script src="./assets/board.js" defer></script>
+    <script src="./assets/logout.js" defer></script>
+    <title>The Pitchside Gazette - Journalist Board</title>
+</head>
+<body>
+    <nav>
+        <button id="logout">Log out</button>
+    </nav>
+    <header>
+        <h1>The Pitchside Gazette</h1>
+        <em>Reporting the truth from the touchline.</em>
+    </header>
+    <hr />
+    <main>
+        <div class="container" id="posts">
+            </div>
+
+        <hr />
+
+        <section class="form-section">
+            <h2>Create New Report</h2>
+            <form id="post-form">
+                <fieldset>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="Match Report">Match Report</option>
+                        <option value="Transfer News">Transfer News</option>
+                        <option value="Club Injuries">Club Injuries</option>
+                        <option value="Club News">Club News</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="title">Headline:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter an eye-catching title..." required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="content">Report Content:</label>
+                    <textarea id="content" name="content" rows="6" placeholder="Write your full report here..." required></textarea>
+                </fieldset>
+
+                <input type="submit" value="Publish to Gazette">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
